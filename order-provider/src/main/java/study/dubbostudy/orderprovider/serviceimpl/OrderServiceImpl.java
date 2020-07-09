@@ -1,9 +1,12 @@
 package study.dubbostudy.orderprovider.serviceimpl;
 
+import org.apache.dubbo.config.RegistryConfig;
+import org.springframework.context.annotation.Bean;
 import study.dubbostudy.orderapi.service.OrderService;
 import study.dubbostudy.orderapi.wrapper.DoOrderRequestWrapper;
 import study.dubbostudy.orderapi.wrapper.DoOrderResponseWrapper;
 
+import java.rmi.registry.Registry;
 import java.util.Random;
 
 /**
@@ -21,4 +24,6 @@ public class OrderServiceImpl implements OrderService {
         responseWrapper.setMsg("新建订单成功");
         return responseWrapper;
     }
+
+
 }

@@ -1,4 +1,4 @@
-package study.dubbostudy;
+package study.dubbostudy.orderprovider;
 
 
 import org.apache.dubbo.container.Main;
