@@ -1,7 +1,13 @@
 package study.dubbostudy.orderprovider;
 
 
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.container.Main;
+import study.dubbostudy.orderapi.service.OrderService;
+import study.dubbostudy.orderapi.service.OrderService1;
+import study.dubbostudy.orderprovider.serviceimpl.OrderServiceImpl;
+import study.dubbostudy.orderprovider.serviceimpl.OrderServiceImpl1;
 
 /**
  * @author YeHaocong
@@ -10,6 +16,8 @@ import org.apache.dubbo.container.Main;
 
 public class APP {
     public static void main(String[] args) {
+
         Main.main(args);
+
     }
 }
